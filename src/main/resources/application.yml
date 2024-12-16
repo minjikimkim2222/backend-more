@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: lion
+
+# elasticsearch ??
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+      url: localhost:9200
+
+  datasource:
+    url: jdbc:mysql://localhost:3307/lionDB
+    username: root
+    password: root1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # JPA ?? ??
+  jpa:
+    hibernate:
+      ddl-auto: update   # update? ???? ???? ?? ???
+    show-sql: true       # SQL ?? ?? ??
+    properties:
+      hibernate:
+        format_sql: true # SQL ?? ??
+
+# server port
+server:
+  port: 8090
+
