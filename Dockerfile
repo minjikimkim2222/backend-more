@@ -1,13 +1,7 @@
 # JDK 17 버전의 Docker 이미지 사용
 FROM bellsoft/liberica-openjdk-alpine:17
 
-# Gradle을 이용해 빌드 실행하는 명령어
-CMD ["./gradlew", "clean", "build"]
-
-# 컨테이너 내의 /tmp 디렉토리를 볼륨으로 설정
-VOLUME /tmp
-
-# Gradle로 빌드한 jar파일의 위치를 변수로 설정
+# Gradle로 빌드할 jar파일의 위치를 변수로 설정
 ARG JAR_FILE=build/libs/*.jar
 
 # JAR_FILE 변수에 지정된 파일을 app.jar라는 이름으로 컨테이너에 추가
