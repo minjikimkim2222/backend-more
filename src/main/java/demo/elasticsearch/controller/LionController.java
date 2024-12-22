@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class LionController {
     @GetMapping("/lions")
     public String lion(){
-        return "lion !!";
+        return "lion edited !!";
     }
 }
