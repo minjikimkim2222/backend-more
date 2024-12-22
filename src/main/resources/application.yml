@@ -26,5 +26,9 @@ spring:
 
 # server port
 server:
-  port: 8090
+  port: 8080
+
+# TM DB API
+tmdb:
+  key: b2054637fc7616d2ebab73ed9c6ae1d3
 

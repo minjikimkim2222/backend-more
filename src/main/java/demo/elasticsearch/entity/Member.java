@@ -1,4 +1,4 @@
-package test.v1.entity;
+package demo.elasticsearch.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
